@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="password" value="admin123"/>
+  <parameter name="username" value="Admin"/>
+  <test parallel="none" name="Test(failed)" preserve-order="true">
+    <parameter name="password" value="admin123"/>
+    <parameter name="username" value="Admin"/>
+    <classes>
+      <class name="assignmentpack1.OrangeHRMassgn">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="Shutdown"/>
+          <include name="accountCreation" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- assignmentpack1.OrangeHRMassgn -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
